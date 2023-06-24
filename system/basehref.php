@@ -16,5 +16,5 @@ $baseHref = $_SERVER["HTTP_HOST"].$dirname;
 //$request_uri = str_replace([$dirname,$basename],null,$_SERVER["REQUEST_URI"]);//=> /
 //$baseHref = $_SERVER["HTTP_HOST"].$dirname;
 //#endregion
-echo '<base href="http://'.$baseHref.'"/>';
+echo '<base href="http://'.$baseHref.'"/>'; 
 

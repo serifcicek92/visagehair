@@ -2,13 +2,6 @@
 // require_once 'system/Attributes/Test.php';
 // exit;
 
-
-
-
-
-
-
-
 declare(strict_types = 1);
 
 // php -S localhost:8888
@@ -17,7 +10,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors',1);
 ob_start();
 session_start();
-set_include_path('c:\xampp\htdocs\mvcphp');
+set_include_path('c:\xampp\htdocs\visagehair');
 //define THEMANAME, SITEADRESS, BASEURL, INCLUDEPATH
 require_once 'system/define.php';
 
@@ -47,7 +40,10 @@ $app = new Application();
 
 $app->runControllers([
     App\Controllers\Home::class,
-    App\Controllers\Auth::class
+    App\Controllers\Auth::class,
+    App\Controllers\Shop::class,
+    App\Controllers\Blog::class,
+    App\Controllers\Admin::class,
 ]);
     
 ob_end_flush();

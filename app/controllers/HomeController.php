@@ -32,4 +32,24 @@ class Home extends Controller
         echo $url;
         exit;
     }
+
+
+    #[Route('/contact')]
+    public function contact() : void {
+        Application::$app->view->title = "Contuct Us";
+        $this->render('contact',[]);
+    }
+
+    #[Route('/about')]
+    public function about() : void {
+        Application::$app->view->title = "About Us";
+        $this->render('about',[]);
+    }
+    
+    #[Route('/404')]
+    public function errorPage() : void {
+        Application::$app->view->title = "404 Error";
+        $this->render('helpers/404',[]);
+    }
+
 }

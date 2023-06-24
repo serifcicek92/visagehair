@@ -47,7 +47,7 @@ class View
         }
 
         $className = ucfirst($layoutName);
-        require(INCLUDEPATH."/app/controllers/".$className."Controller.php");
+        // require(INCLUDEPATH."/app/controllers/".$className."Controller.php");
         $className = "App\Controllers\\".$className;
         Application::$app->layoutClass = new $className;
 
